@@ -10,8 +10,14 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <h1>Food Ordering System</h1>
-        <Menu />
-        <Cart />
+        <div className="flex flex-row">
+          <div className="flex-2">
+            <Menu />
+          </div>
+          <div className="flex-10">
+            <Cart />
+          </div>
+        </div>
         <History />
       </div>
     </Provider>

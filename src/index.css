@@ -1,0 +1,7 @@
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+/* disable preflight css, keep h1~h6 default style */
+/* Ref. https://tailwindcss.com/docs/preflight#disabling-preflight */
+/* @import "tailwindcss/preflight.css" layer(base); */
+@import "tailwindcss/utilities.css" layer(utilities);
