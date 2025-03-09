@@ -35,13 +35,19 @@ pnpm install
 ### 3️⃣ Start Development Server
 
 ```sh
-pnpm run dev
+pnpm dev
 ```
 
 ### 4️⃣ Build for Production
 
 ```sh
-pnpm run build
+pnpm build
+```
+
+### 5️⃣ Start Production Server
+
+```sh
+pnpm preview
 ```
 
 ## 📂 Project Structure
