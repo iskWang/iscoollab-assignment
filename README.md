@@ -1,54 +1,74 @@
-# React + TypeScript + Vite
+# Food Ordering App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple food ordering web application built with **React, Redux Toolkit, Blueprint.js, and TailwindCSS**. Users can browse a menu, add items to their cart, and view order history.
 
-Currently, two official plugins are available:
+## 📦 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Menu Display**: View available food items categorized by type
+- **Cart Management**: Add, remove, and clear items from the cart
+- **Order Checkout**: Place orders and track past purchases
+- **History Tracking**: View and clear past order history
+- **Styled UI**: Uses Blueprint.js components with TailwindCSS for styling
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React + Vite
+- **State Management**: Redux Toolkit
+- **UI Library**: Blueprint.js + TailwindCSS
+- **Package Manager**: pnpm (preferred)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Setup & Installation
+
+### 1️⃣ Clone the Repository
+
+```sh
+ git clone https://github.com/iskWang/iscoollab-assignment.git
+ cd iscoollab-assignment
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2️⃣ Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```sh
+pnpm install
 ```
+
+### 3️⃣ Start Development Server
+
+```sh
+pnpm run dev
+```
+
+### 4️⃣ Build for Production
+
+```sh
+pnpm run build
+```
+
+## 📂 Project Structure
+
+```
+📦 src/
+ ┣ 📂 components/      # UI Components
+ ┃ ┣ 📜 Cart.tsx       # Shopping Cart Component
+ ┃ ┣ 📜 History.tsx    # Order History Component
+ ┃ ┣ 📜 Menu.tsx       # Menu Component
+ ┣ 📂 store/           # Redux Store
+ ┃ ┣ 📜 index.ts       # Store Configuration
+ ┃ ┣ 📜 cartSlice.ts   # Cart Reducer
+ ┃ ┣ 📜 menuSlice.ts   # Menu Reducer
+ ┃ ┣ 📜 historySlice.ts# Order History Reducer
+ ┣ 📜 App.tsx          # Main Application Component
+ ┣ 📜 index.css        # TailwindCSS Styles
+ ┣ 📜 main.tsx         # React App Entry Point
+ ┗ 📜 vite.config.ts   # Vite Configuration
+```
+
+## 📝 Notes
+
+- **Ensure **``** is installed before running the project**
+- Uses **Blueprint.js** for UI components
+- TailwindCSS is used with **default styles**, no preflight reset
+
+## 📜 License
+
+MIT License
