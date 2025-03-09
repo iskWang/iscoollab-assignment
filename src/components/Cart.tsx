@@ -1,5 +1,5 @@
-import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "@/store";
+import { useSelector } from "react-redux";
+import { RootState, useAppDispatch } from "@/store";
 import { Button, Card, NumericInput } from "@blueprintjs/core";
 import {
   removeFromCart,
@@ -10,7 +10,7 @@ import {
 
 const Cart = () => {
   const cartItems = useSelector((state: RootState) => state.cart.items);
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   return (
     <div>
