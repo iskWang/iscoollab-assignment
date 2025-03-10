@@ -8,13 +8,13 @@ import "@blueprintjs/core/lib/css/blueprint.css";
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
+      <div className="App w-[1000px] m-auto">
         <h1>Food Ordering System</h1>
         <div className="flex flex-row">
-          <div className="flex-2">
+          <div className="flex-4">
             <Menu />
           </div>
-          <div className="flex-10">
+          <div className="flex-8">
             <Cart />
           </div>
         </div>
