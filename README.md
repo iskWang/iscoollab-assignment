@@ -17,6 +17,10 @@ This is a simple food ordering web application built with **React, Redux Toolkit
 - **UI Library**: Blueprint.js + TailwindCSS
 - **Package Manager**: pnpm (preferred)
 
+## Demo site
+
+https://me.josh.com.tw/iscoollab-assignment/
+
 ## 🚀 Setup & Installation
 
 ### 1️⃣ Clone the Repository
@@ -71,7 +75,6 @@ pnpm preview
 
 ## 📝 Notes
 
-- **Ensure **``** is installed before running the project**
 - Uses **Blueprint.js** for UI components
 - TailwindCSS is used with **default styles**, no preflight reset
 
